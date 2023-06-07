@@ -6,4 +6,98 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ListView
+            android:id="@+id/lv_bebidas"
+            android:layout_width="413dp"
+            android:layout_height="458dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="55dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bAddBebida" />
+
+        <EditText
+            android:id="@+id/ptValorBebidas"
+            android:layout_width="151dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="240dp"
+            android:ems="10"
+            android:hint="Valor do Bebida"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="83dp" />
+
+        <EditText
+            android:id="@+id/ptIdBebidas"
+            android:layout_width="178dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="40dp"
+            android:ems="10"
+            android:hint="Id Bebida"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ptValorBebidas"
+            tools:layout_editor_absoluteY="88dp" />
+
+        <Button
+            android:id="@+id/bAddBebida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="296dp"
+            android:text="Add Lanche"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.285"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ptValorBebidas" />
+
+        <Button
+            android:id="@+id/bAtualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="167dp"
+            android:text="Atualizar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bAddBebida"
+            app:layout_constraintTop_toBottomOf="@+id/ptValorBebidas" />
+
+        <Button
+            android:id="@+id/bListaBebida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="16dp"
+            android:text="Listar Bebidas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bAtualizar"
+            app:layout_constraintTop_toBottomOf="@+id/ptIdBebidas" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/ptNomeBebidas"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:hint="Nome Bebida"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

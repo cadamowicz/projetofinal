@@ -33,12 +33,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ptNomeULanche = findViewById(R.id.ptNomeULanche);
-        ptValorLanche = findViewById(R.id.ptValorLanche);
-        ptIdLanche = findViewById(R.id.ptIdLanche);
-        bAddLanche = findViewById(R.id.bAddLanche);
+        ptValorLanche = findViewById(R.id.ptValorBebidas);
+        ptIdLanche = findViewById(R.id.ptIdBebidas);
+        bAddLanche = findViewById(R.id.bAddBebida);
         bAtualizar = findViewById(R.id.bAtualizar);
-        bListaLanche = findViewById(R.id.bListaLanche);
-        lv_lanches = findViewById(R.id.lv_lanches);
+        bListaLanche = findViewById(R.id.bListaBebida);
+        lv_lanches = findViewById(R.id.lv_bebidas);
 
         lanchesdb = new Lanchesdb(MainActivity.this);
         mostrarLanchesNaListView(lanchesdb);

@@ -7,14 +7,14 @@
     tools:context=".MainActivity">
 
     <ListView
-        android:id="@+id/lv_lanches"
+        android:id="@+id/lv_bebidas"
         android:layout_width="413dp"
         android:layout_height="458dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="55dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bAddLanche" />
+        app:layout_constraintTop_toBottomOf="@+id/bAddBebida" />
 
     <EditText
         android:id="@+id/ptNomeULanche"
@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/ptValorLanche"
+        android:id="@+id/ptValorBebidas"
         android:layout_width="151dp"
         android:layout_height="49dp"
         android:layout_marginStart="20dp"
@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ptNomeULanche" />
 
     <EditText
-        android:id="@+id/ptIdLanche"
+        android:id="@+id/ptIdBebidas"
         android:layout_width="178dp"
         android:layout_height="43dp"
         android:layout_marginStart="22dp"
@@ -56,11 +56,11 @@
         android:hint="Id Lanche"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ptValorLanche"
+        app:layout_constraintStart_toEndOf="@+id/ptValorBebidas"
         app:layout_constraintTop_toBottomOf="@+id/ptNomeULanche" />
 
     <Button
-        android:id="@+id/bAddLanche"
+        android:id="@+id/bAddBebida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -70,7 +70,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ptValorLanche" />
+        app:layout_constraintTop_toBottomOf="@+id/ptValorBebidas" />
 
     <Button
         android:id="@+id/bAtualizar"
@@ -81,11 +81,11 @@
         android:layout_marginEnd="167dp"
         android:text="Atualizar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bAddLanche"
-        app:layout_constraintTop_toBottomOf="@+id/ptValorLanche" />
+        app:layout_constraintStart_toEndOf="@+id/bAddBebida"
+        app:layout_constraintTop_toBottomOf="@+id/ptValorBebidas" />
 
     <Button
-        android:id="@+id/bListaLanche"
+        android:id="@+id/bListaBebida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
@@ -94,5 +94,5 @@
         android:text="Listar Lanches"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/bAtualizar"
-        app:layout_constraintTop_toBottomOf="@+id/ptIdLanche" />
+        app:layout_constraintTop_toBottomOf="@+id/ptIdBebidas" />
 </androidx.constraintlayout.widget.ConstraintLayout>
