@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText ptNomeULanche;
+    EditText ptNomeLanche;
     EditText ptValorLanche;
     EditText ptIdLanche;
     Button bAddLanche;
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ptNomeULanche = findViewById(R.id.ptNomeULanche);
+        ptNomeLanche = findViewById(R.id.ptNomeLanche);
         ptValorLanche = findViewById(R.id.ptValorBebidas);
         ptIdLanche = findViewById(R.id.ptIdBebidas);
         bAddLanche = findViewById(R.id.bAddBebida);
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
                 try {
                     lanches = new Lanches(-1,
-                            ptNomeULanche.getText().toString(),
+                            ptNomeLanche.getText().toString(),
                             Integer.parseInt(ptValorLanche.getText().toString()));
                     boolean sucesso = lanchesdb.adicionarLanches(lanches);
 
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
                 Lanches lanches = null;
 
                 try {
-                    lanches = new Lanches(Integer.parseInt(ptIdLanche.getText().toString()), ptNomeULanche.getText().toString(), Integer.parseInt(ptValorLanche.getText().toString()));
+                    lanches = new Lanches(Integer.parseInt(ptIdLanche.getText().toString()), ptNomeLanche.getText().toString(), Integer.parseInt(ptValorLanche.getText().toString()));
 
                     boolean sucesso = lanchesdb.atualizarLanches(lanches);
 

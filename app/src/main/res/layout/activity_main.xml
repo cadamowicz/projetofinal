@@ -17,7 +17,7 @@
         app:layout_constraintTop_toBottomOf="@+id/bAddBebida" />
 
     <EditText
-        android:id="@+id/ptNomeULanche"
+        android:id="@+id/ptNomeLanche"
         android:layout_width="273dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -43,7 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ptNomeULanche" />
+        app:layout_constraintTop_toBottomOf="@+id/ptNomeLanche" />
 
     <EditText
         android:id="@+id/ptIdBebidas"
@@ -57,7 +57,7 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ptValorBebidas"
-        app:layout_constraintTop_toBottomOf="@+id/ptNomeULanche" />
+        app:layout_constraintTop_toBottomOf="@+id/ptNomeLanche" />
 
     <Button
         android:id="@+id/bAddBebida"
