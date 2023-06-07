@@ -26,9 +26,29 @@ public class Lanches {
 
     }
 
+    protected int getIdLanches() {
+        return idLanches;
+    }
 
+    protected void setIdLanches(int idLanches) {
+        this.idLanches = idLanches;
+    }
 
+    protected String getNomeLanches() {
+        return nomeLanches;
+    }
 
+    protected void setNomeLanches(String nomeLanches) {
+        this.nomeLanches = nomeLanches;
+    }
+
+    protected int getValorLanches() {
+        return valorLanches;
+    }
+
+    protected void setValorLanches(int valorLanches) {
+        this.valorLanches = valorLanches;
+    }
 
 
 }
