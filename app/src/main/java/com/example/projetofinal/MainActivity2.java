@@ -2,6 +2,7 @@ package com.example.projetofinal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -18,6 +19,7 @@ public class MainActivity2 extends AppCompatActivity {
     Button bAddBebida;
     Button bAtualizar;
     Button bListaBebida;
+    Button pglanches;
     ListView lv_bebidas;
 
     ArrayAdapter bebidaArrayAdapter;
@@ -36,6 +38,7 @@ public class MainActivity2 extends AppCompatActivity {
         bAtualizar = findViewById(R.id.bAtualizar);
         bListaBebida = findViewById(R.id.bListaBebida);
         lv_bebidas = findViewById(R.id.lv_bebidas);
+        pglanches = findViewById(R.id.pglanches);
 
         bebidasdb = new Bebidasdb(MainActivity2.this);
         mostrarBebidasNaListView(bebidasdb);
@@ -110,6 +113,14 @@ public class MainActivity2 extends AppCompatActivity {
                     Toast.makeText(MainActivity2.this, "Erro na criação da Bebida!", Toast.LENGTH_LONG).show();
                     bebidas = new Bebidas(-1, "erro", 0);
                 }
+
+            }
+        });
+        pglanches.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity2.this, MainActivity.class);
+                startActivity(intent);
 
             }
         });

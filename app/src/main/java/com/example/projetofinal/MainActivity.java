@@ -3,6 +3,7 @@ package com.example.projetofinal;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     Button bAddLanche;
     Button bAtualizar;
     Button bListaLanche;
+    Button pgbebidas;
     ListView lv_lanches;
 
     ArrayAdapter lancheArrayAdapter;
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         bAtualizar = findViewById(R.id.bAtualizar);
         bListaLanche = findViewById(R.id.bListaBebida);
         lv_lanches = findViewById(R.id.lv_bebidas);
+        pgbebidas = findViewById(R.id.pgbebidas);
 
         lanchesdb = new Lanchesdb(MainActivity.this);
         mostrarLanchesNaListView(lanchesdb);
@@ -115,6 +118,16 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        pgbebidas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(intent);
+
+            }
+        });
+
     }
 
     private void mostrarLanchesNaListView(Lanchesdb lanchesdb) {
@@ -122,8 +135,6 @@ public class MainActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1, lanchesdb.getListaLanches());
         lv_lanches.setAdapter(lancheArrayAdapter);
     }
-
-
 
 
 }
