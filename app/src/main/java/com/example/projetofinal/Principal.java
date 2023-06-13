@@ -20,7 +20,7 @@ public class Principal extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Principal.this, MainActivity.class);
+                Intent intent = new Intent(Principal.this, pghamb.class);
                 startActivity(intent);
 
             }

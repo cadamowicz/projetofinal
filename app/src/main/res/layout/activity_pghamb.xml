@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pghamb">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#AEF3E889"
+        android:textAlignment="center"
+        tools:context=".pag2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="152dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="408dp"
+            android:layout_marginEnd="1dp"
+            android:text="Escolha o seu lanche pelo número"
+            android:textAlignment="center"
+            android:textColor="#020202"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/oplanche"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <EditText
+            android:id="@+id/oplanche"
+            android:layout_width="46dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="43dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/qtde"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="61dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="428dp"
+            android:layout_marginEnd="6dp"
+            android:text="Qtde"
+            android:textAlignment="center"
+            android:textColor="#020202"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/qtde"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/oplanche"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="100dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="51dp"
+            android:backgroundTint="#D80606"
+            android:text="Adicionar"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qtde" />
+
+        <EditText
+            android:id="@+id/qtde"
+            android:layout_width="46dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="54dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/oplanche"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="78dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginEnd="78dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="ESCOLHA O SEU BURGER MANIA"
+            android:textColor="#020202"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="39dp"
+            android:backgroundTint="#D80606"
+            android:text="Próximo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sub1"
+            app:layout_constraintTop_toBottomOf="@+id/b2" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="98dp"
+            android:layout_marginEnd="22dp"
+            android:text="Subtotal: "
+            android:textColor="#020202"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/sub1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/sub1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="98dp"
+            android:layout_marginEnd="62dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/b3"
+            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <ListView
+            android:id="@+id/lvBurguer"
+            android:layout_width="409dp"
+            android:layout_height="359dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/oplanche"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="78dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="ESCOLHA O SEU BURGER MANIA"
+        android:textColor="#020202"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="37dp"
+        android:backgroundTint="#D80606"
+        android:text="Próximo"
+        app:layout_constraintStart_toEndOf="@+id/sub1"
+        app:layout_constraintTop_toBottomOf="@+id/b2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

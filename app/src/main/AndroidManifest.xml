@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Projetofinal"
         tools:targetApi="31">
         <activity
+            android:name=".pghamb"
+            android:exported="false" />
+        <activity
             android:name=".Principal"
             android:exported="true">
             <intent-filter>
