@@ -22,7 +22,7 @@ public class Lanches {
 
     @Override
     public String toString() {
-        return "Lanche{" + "idLanches=" + idLanches + ", nomeLanches='" + nomeLanches + '\'' + ", valorLanches=" + valorLanches + '}';
+        return "Lanche{" + "idLanche=" + idLanches + ", nomeLanche='" + nomeLanches + '\'' + ", valorLanche=" + valorLanches + '}';
 
     }
 

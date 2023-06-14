@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Projetofinal"
         tools:targetApi="31">
         <activity
-            android:name=".pghamb"
+            android:name=".Pghamb"
             android:exported="false" />
         <activity
             android:name=".Principal"

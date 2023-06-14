@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">projetofinal</string>
+    <string-array name="spinner_lista_hamb">
+        <item>hamb1</item>
+        <item>hamb2</item>
+        <item>hamb3</item>
+        <item>hamb4</item>
+    </string-array>
 </resources>
