@@ -24,20 +24,17 @@ public class Pghamb extends AppCompatActivity {
         spinnerBurg = findViewById(R.id.spinner_burg);
 
         Lanchesdb lanchesdb=new Lanchesdb(this);
+
         List<Lanches> listaLanchesBD = new ArrayList<>();
-         listaLanchesBD= lanchesdb.getListaLanches();
+        listaLanchesBD= lanchesdb.getListaLanches();
         String[] listaLanches=new String[listaLanchesBD.size()];
 
         for (int i=0; i < listaLanches.length;i++) {
-            listaLanches[i] = listaLanchesBD.get(i).getNomeLanches();// = getResources().getStringArray(lanchesdb.getListaLanches());
+            listaLanches[i] = listaLanchesBD.get(i).getNomeLanches() +"  " + "R$" + listaLanchesBD.get(i).getValorLanches();// = getResources().getStringArray(lanchesdb.getListaLanches());
         }
 
-
         ArrayAdapter adapterSpinnerBurg =new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,listaLanches);
-
-
         spinnerBurg.setAdapter(adapterSpinnerBurg);
-
     }
 
 
