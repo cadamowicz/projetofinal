@@ -21,6 +21,7 @@ public class Pghamb extends AppCompatActivity {
     TextView sub1;
 
 
+    String lancheSelecionado;
 
 
     @Override
@@ -56,7 +57,7 @@ public class Pghamb extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
-                String lancheSelecionado = String.valueOf(spinnerBurg.getItemIdAtPosition(i));
+                lancheSelecionado = String.valueOf(spinnerBurg.getItemIdAtPosition(i));
 
                 int op= Integer.parseInt(lancheSelecionado);
 
@@ -74,8 +75,6 @@ public class Pghamb extends AppCompatActivity {
 
             }
         });
-
-
 
 
     }
