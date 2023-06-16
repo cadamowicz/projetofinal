@@ -15,21 +15,6 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
-        <Button
-            android:id="@+id/b2"
-            android:layout_width="100dp"
-            android:layout_height="34dp"
-            android:layout_marginStart="260dp"
-            android:layout_marginTop="367dp"
-            android:layout_marginEnd="51dp"
-            android:backgroundTint="#D80606"
-            android:text="Adicionar"
-            android:textSize="10sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spinner_burg" />
-
         <TextView
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
@@ -45,45 +30,45 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/b3"
+            android:id="@+id/b4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="261dp"
-            android:layout_marginEnd="49dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="419dp"
+            android:layout_marginEnd="34dp"
             android:backgroundTint="#D80606"
             android:text="Próximo"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/b2" />
+            app:layout_constraintStart_toEndOf="@+id/sub2"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_Bebida" />
 
         <TextView
             android:id="@+id/textView14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="367dp"
-            android:layout_marginEnd="23dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="435dp"
+            android:layout_marginEnd="76dp"
             android:text="Subtotal: "
             android:textColor="#020202"
             android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/sub1"
+            app:layout_constraintEnd_toStartOf="@+id/sub2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spinner_burg" />
+            app:layout_constraintTop_toBottomOf="@+id/spinner_Bebida" />
 
         <TextView
-            android:id="@+id/sub1"
+            android:id="@+id/sub2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="22dp"
-            android:layout_marginTop="370dp"
-            android:layout_marginEnd="96dp"
+            android:layout_marginTop="438dp"
+            android:layout_marginEnd="40dp"
             android:text="TextView"
-            app:layout_constraintEnd_toStartOf="@+id/b2"
+            app:layout_constraintEnd_toStartOf="@+id/b4"
             app:layout_constraintStart_toEndOf="@+id/textView14"
-            app:layout_constraintTop_toBottomOf="@+id/spinner_burg" />
+            app:layout_constraintTop_toBottomOf="@+id/spinner_Bebida" />
 
         <Spinner
-            android:id="@+id/spinner_burg"
+            android:id="@+id/spinner_Bebida"
             android:layout_width="409dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
@@ -117,7 +102,7 @@
         android:layout_marginTop="37dp"
         android:backgroundTint="#D80606"
         android:text="Próximo"
-        app:layout_constraintStart_toEndOf="@+id/sub1"
+        app:layout_constraintStart_toEndOf="@+id/sub2"
         app:layout_constraintTop_toBottomOf="@+id/b2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

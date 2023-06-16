@@ -2,14 +2,14 @@ package com.example.projetofinal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +20,8 @@ public class Pghamb extends AppCompatActivity {
 
     TextView sub1;
 
+    Button b3;
+
 
     String lancheSelecionado;
 
@@ -29,8 +31,9 @@ public class Pghamb extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pghamb);
 
-        sub1 = findViewById(R.id.sub1);
-        spinnerBurg = findViewById(R.id.spinner_burg);
+        sub1 = findViewById(R.id.sub2);
+        spinnerBurg = findViewById(R.id.spinner_Bebida);
+        b3=findViewById(R.id.b4);
 
 
         Lanchesdb lanchesdb=new Lanchesdb(this);
@@ -75,9 +78,24 @@ public class Pghamb extends AppCompatActivity {
 
             }
         });
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent2 = new Intent(Pghamb.this, Pgbeb.class);
+
+                //intent2.putExtra("totalpag3",String.valueOf(subtotal1) );
+                //intent2.putExtra("novoalllanches",String.valueOf(tempalllanches) );
+                //intent2.putExtra("bebidas",String.valueOf(allbebidas));
+                startActivity(intent2);
+
+            }
+        });
 
 
     }
+
+
 
 
 
