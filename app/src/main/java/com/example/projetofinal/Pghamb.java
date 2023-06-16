@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,24 +37,36 @@ public class Pghamb extends AppCompatActivity {
         List<Lanches> listaLanchesBD = new ArrayList<>();
         listaLanchesBD= lanchesdb.getListaLanches();
         String[] listaLanches=new String[listaLanchesBD.size()];
+        String[] listaLanchesValor=new String[listaLanchesBD.size()];
 
         for (int i=0; i < listaLanches.length;i++) {
             listaLanches[i] = listaLanchesBD.get(i).getNomeLanches() +"  " + "R$ " + listaLanchesBD.get(i).getValorLanches() + ",00";
+        }
+
+        for (int i=0; i < listaLanchesValor.length;i++) {
+            listaLanchesValor[i] = listaLanchesBD.get(i).getValorLanches() + ",00";
         }
 
 
         ArrayAdapter adapterSpinnerBurg =new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,listaLanches);
         spinnerBurg.setAdapter(adapterSpinnerBurg);
 
+
         spinnerBurg.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
+                String lancheSelecionado = String.valueOf(spinnerBurg.getItemIdAtPosition(i));
 
-                String lancheSelecionado =spinnerBurg.getSelectedItem().toString();
+                int op= Integer.parseInt(lancheSelecionado);
 
-                sub1.setText(lancheSelecionado);
+                for (int j=0; j < listaLanchesValor.length;j++) {
 
+                    if (op == j) {
+                        lancheSelecionado = listaLanchesValor[j];
+                        sub1.setText(lancheSelecionado);
+                    }
+                }
             }
 
             @Override
