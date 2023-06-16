@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Projetofinal"
         tools:targetApi="31">
         <activity
+            android:name=".Pgfinal"
+            android:exported="false" />
+        <activity
             android:name=".Pgbeb"
             android:exported="false" />
         <activity

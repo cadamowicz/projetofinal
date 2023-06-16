@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pgfinal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AEF3E889"
+        tools:context=".pag4">
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="121dp"
+            android:backgroundTint="#D80606"
+            android:text="Concluir pedido"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/valortotalpedido" />
+
+        <TextView
+            android:id="@+id/bebidatotal"
+            android:layout_width="211dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="56dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lanches"
+            app:layout_constraintTop_toBottomOf="@+id/lanchetotal" />
+
+        <TextView
+            android:id="@+id/bebidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="99dp"
+            android:layout_marginEnd="13dp"
+            android:text="Lanches"
+            app:layout_constraintEnd_toStartOf="@+id/lanchetotal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lanches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="13dp"
+            android:text="Bebidas"
+            app:layout_constraintEnd_toStartOf="@+id/bebidatotal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bebidas" />
+
+        <TextView
+            android:id="@+id/valortotalpedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="117dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView24"
+            app:layout_constraintTop_toBottomOf="@+id/bebidatotal" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="13dp"
+            android:text="Total"
+            android:textColor="#020202"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/valortotalpedido"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lanches" />
+
+        <TextView
+            android:id="@+id/lanchetotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="99dp"
+            android:layout_marginEnd="117dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bebidas"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="175dp"
+            android:layout_height="159dp"
+            android:layout_marginStart="119dp"
+            android:layout_marginTop="95dp"
+            android:layout_marginEnd="117dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/b5"
+            app:srcCompat="@drawable/nossoburguer" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="126dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="RESUMO DO PEDIDO"
+        android:textColor="#020202"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
