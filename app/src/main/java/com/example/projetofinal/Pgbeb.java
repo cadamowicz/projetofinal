@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -23,6 +24,8 @@ public class Pgbeb extends AppCompatActivity {
     String bebidaSelecionada, bebidaEscolhida;
     String valorBebInteiro;
 
+    ImageView imagembebida;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +34,7 @@ public class Pgbeb extends AppCompatActivity {
         sub2 = findViewById(R.id.sub2);
         spinnerBebida = findViewById(R.id.spinner_Bebida);
         b4=findViewById(R.id.b4);
+        imagembebida=findViewById(R.id.imagembebida);
 
         Intent intent1 = getIntent();
         String valorpaghamb = intent1.getStringExtra("totalpaglanche");
@@ -74,6 +78,22 @@ public class Pgbeb extends AppCompatActivity {
                         totalgeral=listaBebidasValor[j]+totalpaghamb;
                         valorBebInteiro=String.valueOf(listaBebidasValor[j]);
                         sub2.setText( bebidaSelecionada);
+
+                        if (op == 0){
+                            imagembebida.setImageResource(R.drawable.cocalata);
+                        }
+                        if (op == 1){
+                            imagembebida.setImageResource(R.drawable.coca600);
+                        }
+                        if (op == 2){
+                            imagembebida.setImageResource(R.drawable.delvale);
+                        }
+                        if (op == 3){
+                            imagembebida.setImageResource(R.drawable.aguasemgas);
+                        }
+                        if (op == 4){
+                            imagembebida.setImageResource(R.drawable.aguacomgas);
+                        }
                     }
                 }
             }

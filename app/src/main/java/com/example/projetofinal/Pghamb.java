@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -22,6 +23,8 @@ public class Pghamb extends AppCompatActivity {
     String lancheSelecionado,lancheop;
     String valorHambInteiro;
 
+    ImageView imagemburg;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +33,7 @@ public class Pghamb extends AppCompatActivity {
         sub1 = findViewById(R.id.sub2);
         spinnerBurg = findViewById(R.id.spinner_Bebida);
         b3=findViewById(R.id.b4);
+        imagemburg=findViewById(R.id.imagemburg);
 
         Lanchesdb lanchesdb=new Lanchesdb(this);
 
@@ -64,7 +68,23 @@ public class Pghamb extends AppCompatActivity {
                         lancheSelecionado = "R$" + listaLanchesValor[j] + ",00";
                         valorHambInteiro=String.valueOf(listaLanchesValor[j]);
                         sub1.setText(lancheSelecionado);
+                        if (op == 0){
+                            imagemburg.setImageResource(R.drawable.xburgue);
+                        }
+                        if (op == 1){
+                            imagemburg.setImageResource(R.drawable.xsalada);
+                        }
+                        if (op == 2){
+                            imagemburg.setImageResource(R.drawable.xbacon);
+                        }
+                        if (op == 3){
+                            imagemburg.setImageResource(R.drawable.xtudo);
+                        }
+                        if (op == 4){
+                            imagemburg.setImageResource(R.drawable.xveg);
+                        }
                     }
+
                 }
             }
 
